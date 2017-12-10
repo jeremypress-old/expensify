@@ -9,11 +9,11 @@ test('should render nothing with no expenses passed in', () => {
 });
 
 test('should render one expense correctly ', () => {
-    const wrapper = shallow(<ExpenseSummary expenses={[expenses[0]]} sum={expenses[0].amount} />);
+    const wrapper = shallow(<ExpenseSummary expensesCount={1} sum={expenses[0].amount} />);
     expect(wrapper).toMatchSnapshot();
 });
 
 test('should render multiple expenses correctly ', () => {
-    const wrapper = shallow(<ExpenseSummary expenses={expenses} sum={expenses[0].amount + expenses[1].amount + expenses[2].amount}/>);
+    const wrapper = shallow(<ExpenseSummary expensesCount={expenses.length} sum={expenses[0].amount + expenses[1].amount + expenses[2].amount}/>);
     expect(wrapper).toMatchSnapshot();
 });

@@ -2,14 +2,14 @@
 
 exports[`should render multiple expenses correctly  1`] = `
 <div>
-  <p>
+  <h1>
     Viewing 
     3
      
     expenses
      for a total of 
     $1,141.95
-  </p>
+  </h1>
 </div>
 `;
 
@@ -17,13 +17,13 @@ exports[`should render nothing with no expenses passed in 1`] = `<div />`;
 
 exports[`should render one expense correctly  1`] = `
 <div>
-  <p>
+  <h1>
     Viewing 
     1
      
     expense
      for a total of 
     $1.95
-  </p>
+  </h1>
 </div>
 `;
